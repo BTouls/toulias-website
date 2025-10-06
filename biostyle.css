@@ -1,34 +1,24 @@
+/* Στυλε για το πανω μερος της σελιδας */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 3px solid blue;
+}
 
-     /* Στυλε για το πανω μερος της σελιδας */
-     header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-        border-bottom: 3px solid blue;
-      }
-      /* Tα 2 παρακατω ειναι για χωρισουμε τις επικεφαλιδας τα στοιχεια σε 2 διαφορετικες στυλες*/
-      header .left{
-        text-align: left;
-      }
-      header .rigt{
-        text-align: right;
-      }
-      :root{
-        --left-w:220px;
-        --gap: 40px;
-        --line-w:4px;
-        --line-color: #1e90ff;
+/* Tα 2 παρακατω ειναι για χωρισουμε τις επικεφαλιδας τα στοιχεια σε 2 διαφορετικες στυλες*/
+header .left {
+  text-align: left;
+}
 
-      }
-      main{
-        margin: 0;
-        padding: 0;
-        border-left: 3px solid blue;
+header .rigt {
+  text-align: right;
+}
 
-      }
-      /* Εδω κανουμε μπλε οτι κειμενο ειναι σε h2*/
-      H2{
-        color: blue;
-      }
- 
+
+/* Εδω κανουμε μπλε οτι κειμενο ειναι σε h2*/
+H2 {
+  color: blue;
+}
+a {cursor: pointer;}
