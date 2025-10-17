@@ -1,0 +1,96 @@
+#index body  {
+  background-color: #E3D7F4;
+  color: rgb(41, 33, 33);
+  
+}
+.center{
+  text-align: center;
+
+}
+
+
+.fav-color {
+  color:rgb(236, 14, 218)
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Licorice&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Licorice&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+/* Στυλε για το πανω μερος της σελιδας */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 3px solid blue;
+}
+
+/* Tα 2 παρακατω ειναι για χωρισουμε τις επικεφαλιδας τα στοιχεια σε 2 διαφορετικες στυλες*/
+header .left {
+  text-align: left;
+}
+
+header .rigt {
+  text-align: right;
+}
+.blue-text{
+  color:blue;
+  background-color: lightgray;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  
+
+}
+.round{
+  border-radius: 16px;
+}
+
+.special-font {
+  font-family: "Lora", serif;
+}
+
+.frame {
+  color: rgb(0, 0, 56);
+  background-color: rgb(212, 233, 240);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(1, 1, 68);
+  margin:20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px grey;
+  width: 30%;
+  max-width: 400;
+  
+ 
+}
+
+
+
+.border {
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+.blue-text:hover {
+  background-color: lightskyblue;
+  border-color:blue;
+  cursor: pointer;
+}
+
+.blue-text:active {
+  background-color: yellow;
+  border-color:orange;
+  cursor: pointer;
+}
+
+/* Εδω κανουμε μπλε οτι κειμενο ειναι σε h2*/
+H2 {
+  color: blue;
+}
+a {cursor: pointer;}
