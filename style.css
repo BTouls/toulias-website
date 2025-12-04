@@ -2,11 +2,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
 
-#index body  {
-  background-color: #E3D7F4;
-  color: rgb(41, 33, 33);
-  
+body {
+  background-color: #F6F6F6; 
+  margin: 0;
+  padding: 0;
+  padding-bottom: 70px;
+   display: flex;
+  flex-direction: column;
 }
+
+
+
+
 .center{
   text-align: center;
 
@@ -18,33 +25,31 @@
 }
 
 
-/* Στυλε για το πανω μερος της σελιδας */
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center;  
   padding: 10px;
   border-bottom: 3px solid blue;
 }
 
-header .left img {
-  display: block;
-  margin-top: 10px;          
-  height: 120px;             
-  object-fit: cover;         
-  border-radius: 50%;        
+.menu {
+  display: flex;
+  align-items: end;    
+  padding-bottom: 3px; 
+  gap: 20px;
+}
+
+header img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  border: 2px solid #003366; 
+  border: 2px solid #003366;
 }
 
-/* Tα 2 παρακατω ειναι για χωρισουμε τις επικεφαλιδας τα στοιχεια σε 2 διαφορετικες στυλες*/
-header .left {
-  text-align: left;
-}
-
-header .rigt {
-  text-align: right;
-}
 .blue-text{
   color:blue;
   background-color: lightgray;
@@ -99,7 +104,6 @@ header .rigt {
   cursor: pointer;
 }
 
-/* Εδω κανουμε μπλε οτι κειμενο ειναι σε h2*/
 H2 {
   color: blue;
 }
@@ -115,18 +119,22 @@ footer{
   flex-direction: column;
   color: aliceblue;
   margin-top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 70px;
+  
 }
 
 
 .content {
   display: flex;
-  align-items: stretch; /* για να έχουν ίδιο ύψος */
-  min-height: calc(100vh - 200px); /* ύψος σελίδας - header/footer */
+  align-items: stretch;
+  min-height: calc(100vh - 200px); 
   gap: 20px;
   padding: 20px;
 }
 
-/* Το sidebar */
 aside {
   width: 15%;                
   background-color: #dfe8f5; 
@@ -138,13 +146,16 @@ aside {
   justify-content: flex-start;
 }
 
-/* Το κύριο περιεχόμενο */
+
 main {
-  flex: 1; /* να πιάνει όλο τον υπόλοιπο χώρο */
+  flex: 1; 
 }
 
-/* Για να “κολλήσει” ως το footer χωρίς κενά */
+
 body, html {
   height: 100%;
   margin: 0;
+  padding: 0;
 }
+
+
