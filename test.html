@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Πειραματισμός με JavaScript - Κουμπιά</title>
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;}
+body{padding:24px;background:#f6f7fb;color:#111}
+h1{font-size:20px;margin-bottom:8px}
+.controls{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+button{padding:8px 12px;border-radius:8px;border:1px solid #cbd5e1;background:#fff;cursor:pointer}
+button.primary{background:#0ea5e9;color:#fff;border:0}
+.box{width:120px;height:120px;border-radius:8px;background:#fde68a;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+.hidden{display:none}
+#log{white-space:pre-wrap;background:#fff;border:1px solid #e6e9f2;padding:12px;border-radius:6px;max-height:220px;overflow:auto}
+input[type=color]{height:36px;width:56px;padding:0;border:0;background:transparent}
+.list{margin-top:8px}
+</style>
+</head>
+<body>
+<h1>Πειραματισμός με JavaScript — Κουμπιά</h1>
+<p>Παρακάτω έχεις πολλά κουμπιά που κάνουν διαφορετικά πράγματα. Άνοιξε το αρχείο στο browser (double-click) και παίξε με τον κώδικα.</p>
+
+
+<div class="controls">
+<button id="btnAlert">Alert</button>
+<button id="btnChangeText">Αλλαγή Κειμένου</button>
+<button id="btnToggleBox">Εμφάνιση/Απόκρυψη Κουτιού</button>
+<button id="btnAddItem">Πρόσθεσε Στοιχείο στη Λίστα</button>
+<button id="btnRemoveItem">Αφαίρεσε Τελευταίο</button>
+<button id="btnToggleClass">Toggle Κλάσης</button>
+<button id="btnAnimate">Κίνηση Κουτιού</button>
+<button id="btnFetch">Πρότυπο Fetch (γνωστή API)</button>
+<button id="btnClearLog">Καθάρισμα Log</button>
+</div>
+
+
+<div style="display:flex;gap:16px;align-items:flex-start;">
+<div>
+<div class="box" id="demoBox">Κουτί</div>
+<label>Χρώμα: <input type="color" id="colorPicker" value="#fde68a"></label>
+</div>
+
+
+<div style="flex:1">
+<h3>Λίστα</h3>
+<ul id="items" class="list"></ul>
+
+
+<h3>Φόρμα (δοκιμή preventDefault)</h3>
+<form id="demoForm">
+<input id="nameInput" placeholder="Όνομα" required>
+<button type="submit">Υποβολή</button>
+</form>
+
+
+<h3>Log</h3>
+<div id="log">Ενέργειες θα εμφανιστούν εδώ...</div>
+</div>
+</div>
+
+
+<script>
+let name = 'bill'
+console.log(`My name is: ${name}`);
+let time = 11
+if (time >= 11){
+    console.log('yess')
+}
+else{
+    console.log("no")
+}
+</script>
+</body>
+</html>
