@@ -15,20 +15,15 @@ img{
   border-radius: 50%;
   object-fit: cover;
 }
+
+
 section {
-  padding: 80px 20px;
+  padding: 40px;
+  min-height: 100vh;
+  border-bottom: gray 1px solid;
 }
 
-section::after {
-  content: "";
-  display: block;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.6);
-  margin-left: -240px;       
-}
-section:last-of-type::after{
-  display: none;
-}
+
 
 aside{
 
@@ -60,11 +55,13 @@ aside a{
   color: white;
 }
 
-
+body {
+  margin: 0px;;;;;
+}
 
 main {
-  margin-left: 240px; 
-  padding: 20px;
+  margin-left: 280px; 
+
  
 }
 
