@@ -3,158 +3,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
 
 body {
-  background-color: #F6F6F6; 
-  margin: 0;
-  padding: 0;
-  padding-bottom: 70px;
-   display: flex;
-  flex-direction: column;
-}
-
-
-
-
-.center{
-  text-align: center;
-
-}
-
-
-.fav-color {
-  color:rgb(236, 14, 218)
-}
-
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;  
-  padding: 10px;
-  border-bottom: 3px solid blue;
-}
-
-.menu {
-  display: flex;
-  align-items: end;   
-  padding-bottom: 3px; 
-  gap: 20px;
-}
-
-header img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-right: 20px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  border: 2px solid #003366;
-}
-
-.blue-text{
-  color:blue;
-  background-color: lightgray;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  
-
-}
-.round{
-  border-radius: 16px;
-}
-
-.special-font {
+  background-color: #0e1a21; 
+  color: #f0f8ff;
   font-family: "Geologica";
 }
 
-.frame {
-  color: rgb(0, 0, 56);
-  background-color: rgb(212, 233, 240);
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(1, 1, 68);
-  margin:20px;
+
+img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+section {
+  padding: 80px 20px;
+}
+
+section::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-left: -240px;       
+}
+section:last-of-type::after{
+  display: none;
+}
+
+aside{
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  background-color: #2694ac ;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 3px 5px grey;
-  width: 30%;
-  max-width: 400;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;      
+  justify-content: center; 
+}
+aside ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
   
+
+}
+a{
+  text-decoration: none;
+  color: #05d1e9;
+}
+aside a{
+  color: white;
+}
+
+
+
+main {
+  margin-left: 240px; 
+  padding: 20px;
  
 }
 
 
-
-.border {
-  border-style: solid;
-  border-width: 2px;
-  border-color: black;
-}
-
-.blue-text:hover {
-  background-color: lightskyblue;
-  border-color:blue;
-  cursor: pointer;
-}
-
-.blue-text:active {
-  background-color: yellow;
-  border-color:orange;
-  cursor: pointer;
-}
-
-/* Εδω κανουμε μπλε οτι κειμενο ειναι σε h2*/
-H2 {
-  color: blue;
-}
-a {cursor: pointer;}
-footer{
-  background-color: rgb(21, 168, 221);
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  gap: 12px;
-  padding: 40px 20px;
-  flex-direction: column;
-  color: aliceblue;
-  margin-top: auto;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 70px;
-  
-}
-
-.content {
-  display: flex;
-  align-items: stretch; 
-  min-height: calc(100vh - 200px); 
-  gap: 20px;
-  padding: 20px;
-}
-
-aside {
-  width: 15%;              
-  background-color: #dfe8f5; 
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-main {
-  flex: 1; 
-}
-
-body, html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-
-
+ p {
+  font-size: 14px;   
+  line-height: 1.6;  
+ }
