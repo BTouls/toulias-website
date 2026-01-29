@@ -45,11 +45,21 @@ section {
   padding: 40px;
   min-height: 100vh;
   border-bottom: gray 1px solid;
-  text-align: left;
+  display: flex;
+  align-items: center;
+
 }
 
 section:last-of-type {
   border-bottom: none;
+}
+
+.content{
+  display: flex;
+
+  flex-direction: column;
+  align-items: left;
+
 }
 
 
