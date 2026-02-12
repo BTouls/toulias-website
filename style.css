@@ -107,3 +107,14 @@ main {
   font-size: 14px;   
   line-height: 1.6;  
  }
+
+ .icon {
+  display: flex;
+  align-items: center;  
+  gap: 10px;             
+}
+
+.icon i {
+  font-size: 24px;       
+}
+
