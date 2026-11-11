@@ -131,3 +131,11 @@ main {
   margin-bottom: 40px;      
 }
 
+@media screen and (max-width: 968px){
+  aside{
+    display:none;
+  }
+  
+  
+}
+
