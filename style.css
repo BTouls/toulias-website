@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap");
 
 body {
-  background-color: #0e1a21; 
+  background-color: #0e1a21;
   color: #f0f8ff;
   font-family: "Geologica";
   margin: 0px;
@@ -11,19 +11,18 @@ body {
   max-width: 100%;
 }
 
-
 img {
   width: 120px;
-  height: 120px;          
+  height: 120px;
   object-fit: cover;
-  border: 3px solid white;     
+  border: 3px solid white;
 }
 
 .letter {
   width: 100px;
   height: 100px;
-  background-color: #0e1a21;   
-  border: 15px solid skyblue;     
+  background-color: #0e1a21;
+  border: 15px solid skyblue;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,15 +32,11 @@ img {
   border-radius: 50%;
   margin-top: 40px;
   margin-bottom: 40px;
-
-  
-
 }
 
-.letter i{
+.letter i {
   font-size: 80px;
 }
-
 
 section {
   padding: 40px;
@@ -49,79 +44,66 @@ section {
   border-bottom: gray 1px solid;
   display: flex;
   align-items: center;
-
 }
 
 section:last-of-type {
   border-bottom: none;
 }
 
-.content{
+.content {
   display: flex;
 
   flex-direction: column;
   align-items: left;
-
 }
 
-
-
-aside{
-
+aside {
   position: fixed;
   top: 0;
   left: 0;
   width: 240px;
   height: 100vh;
-  background-color: #2694ac ;
+  background-color: #2694ac;
   padding: 20px;
 
   display: flex;
   flex-direction: column;
-  align-items: center;      
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
 }
-aside ul{
+aside ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  
-
 }
-a{
+a {
   text-decoration: none;
   color: #05d1e9;
 }
-aside a{
+aside a {
   color: white;
 }
 
-
-
 main {
-  margin-left: 280px; 
-
- 
+  margin-left: 280px;
 }
 
+p {
+  font-size: 14px;
+  line-height: 1.6;
+}
 
- p {
-  font-size: 14px;   
-  line-height: 1.6;  
- }
-
- .icon {
+.icon {
   display: flex;
-  align-items: center;  
-  gap: 10px;             
+  align-items: center;
+  gap: 10px;
 }
 
 .icon i {
-
   width: 38px;
   height: 38px;
-  background-color: #0e1a21;   
-  border: 2px solid skyblue;     
+  background-color: #0e1a21;
+  border: 2px solid skyblue;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,17 +112,21 @@ main {
   font-weight: 600;
   border-radius: 50%;
   margin-top: 40px;
-  margin-bottom: 40px;      
+  margin-bottom: 40px;
 }
 
-@media screen and (max-width: 968px){
-  aside{
-    display:none;
+@media screen and (max-width: 968px) {
+  body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    background-color: #2694ac;
   }
-  main{
+  aside {
+    display: none;
+  }
+  main {
     margin: 0;
   }
-  
-  
 }
-
