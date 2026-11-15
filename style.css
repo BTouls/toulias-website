@@ -114,31 +114,43 @@ p {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+.menu-mobile {
+  display: none;
+}
 
 @media screen and (max-width: 968px) {
+  main {
+    margin: 0;
+  }
+
   aside {
     width: 100%;
     height: 40px;
-    padding: 0;
+    box-sizing: border-box;
     background-color: #2694ac;
+    align-items: flex-end;
   }
 
   .letter {
     display: none;
   }
 
-  aside ul {
+  .menu-mobile {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 5px;
-    width: 100%;
-    white-space: nowrap;
+    border: none;
+    background: transparent;
   }
 
-  aside a {
-    font-size: 8px;
+  .menu-mobile span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
   }
 
-  main {
-    margin: 0;
+  aside ul {
+    display: none;
   }
 }
