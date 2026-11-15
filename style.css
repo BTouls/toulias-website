@@ -116,16 +116,28 @@ p {
 }
 
 @media screen and (max-width: 968px) {
-  body::before {
-    content: "";
-    position: fixed;
+  aside {
     width: 100%;
-    height: 30px;
+    height: 40px;
+    padding: 0;
     background-color: #2694ac;
   }
-  aside {
+
+  .letter {
     display: none;
   }
+
+  aside ul {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  aside a {
+    font-size: 8px;
+  }
+
   main {
     margin: 0;
   }
