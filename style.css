@@ -118,6 +118,7 @@ p {
   display: none;
 }
 
+
 @media screen and (max-width: 968px) {
   main {
     margin: 0;
@@ -138,7 +139,6 @@ p {
   .menu-mobile {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 5px;
     border: none;
     background: transparent;
@@ -152,5 +152,19 @@ p {
 
   aside ul {
     display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #2694ac;
+    padding:  10px;
   }
+
+  aside.menu-open ul {
+    display: block;
+  }
+
+  aside ul li {
+    padding: 10px ;
+  }
+
 }
