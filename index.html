@@ -14,13 +14,14 @@
 
   <body class="special-font">
     <aside>
-
       <button class="menu-mobile">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <div class="portrait"><img src="image/my-picture.jpg" alt="picture with me"></div>
+      <div class="portrait descopt-only">
+        <img src="image/my-picture.jpg" alt="picture with me" />
+      </div>
       <ul>
         <li><a href="#About">About</a></li>
         <li><a href="#Education">Education</a></li>
@@ -37,6 +38,10 @@
     <main>
       <section id="About">
         <div class="content">
+          <div class="portrait mobile-only">
+            <img src="image/my-picture.jpg" alt="picture with me" />
+          </div>
+
           <h1>Bill Toulias</h1>
           <a href="mailto:billtoulias@gmail.com">billtoulias@gmail.com</a>
           <div>
@@ -238,21 +243,19 @@
     </main>
   </body>
 
+  <script>
+    const menuButton = document.querySelector(".menu-mobile");
+    const aside = document.querySelector("aside");
+    const menuLinks = document.querySelectorAll("aside ul a");
 
-<script>
-  const menuButton = document.querySelector(".menu-mobile");
-  const aside = document.querySelector("aside");
-  const menuLinks = document.querySelectorAll("aside ul a");
-
-  menuButton.addEventListener("click", () => {
-    aside.classList.toggle("menu-open");
-  });
-
-  menuLinks.forEach(link => {
-    link.addEventListener("click", () => {
-      aside.classList.remove("menu-open");
+    menuButton.addEventListener("click", () => {
+      aside.classList.toggle("menu-open");
     });
-  });
-</script>
 
+    menuLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        aside.classList.remove("menu-open");
+      });
+    });
+  </script>
 </html>

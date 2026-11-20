@@ -107,6 +107,10 @@ p {
   display: none;
 }
 
+.mobile-only{
+  display: none;
+}
+
 @media screen and (max-width: 968px) {
   main {
     margin: 0;
@@ -120,9 +124,8 @@ p {
     align-items: flex-end;
   }
 
-  .portrait {
-    display: none;
-  }
+
+  
 
   .menu-mobile {
     display: flex;
@@ -153,5 +156,13 @@ p {
 
   aside ul li {
     padding: 10px;
+  }
+
+  .mobile-only{
+    display: block;
+  }
+
+  .descopt-only{
+    display: none;
   }
 }
