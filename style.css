@@ -136,6 +136,11 @@ p {
 }
 
 @media screen and (max-width: 968px) {
+  .language-selector{
+    top: 9px;
+    left:5px;
+  }
+  
   main {
     margin: 0;
   }
