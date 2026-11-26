@@ -115,6 +115,7 @@ p {
   display: none;
 }
 
+
 .language-selector{
   position: absolute;
   top: 20px;
@@ -135,11 +136,36 @@ p {
   border: none;
 }
 
+/* Dropdown */
+.language-dropdown{
+  display: none;
+  margin-top: 5px;
+}
+
+.language-selector.active .language-dropdown{
+  display: block;
+}
+
+.language-option{
+  display: none;
+  cursor: pointer;
+}
+
+.language-option img{
+  width: 28px;
+  height: 20px;
+  object-fit: cover;
+  border:none
+}
+
+
 @media screen and (max-width: 968px) {
   .language-selector{
     top: 9px;
-    left:5px;
+    left: 5px;
   }
+
+
   
   main {
     margin: 0;
