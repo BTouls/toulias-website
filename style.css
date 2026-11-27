@@ -18,10 +18,18 @@ img {
   border: 3px solid white;
 }
 
-.lang-en{
+.lang-en,
+.lang-gr {
   display: none;
 }
 
+body.english .lang-en {
+  display: revert;
+}
+
+body.greek .lang-gr {
+  display: revert;
+}
 
 .portrait img {
   border-radius: 50%;

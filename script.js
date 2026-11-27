@@ -1,18 +1,23 @@
+
 const menuButton = document.querySelector(".menu-mobile");
 const aside = document.querySelector("aside");
 const menuLinks = document.querySelectorAll("aside ul a");
 const selector = document.querySelector(".language-selector");
 
-// js from language selector
+// Language selector
 if (selector) {
   const current = selector.querySelector(".language-current");
   const currentImg = current.querySelector("img");
   const options = selector.querySelectorAll(".language-option");
 
-  // Αρχική γλώσσα σύμφωνα με τη σημαία που εμφανίζεται επάνω
   let selectedLang = currentImg.getAttribute("src").includes("gb.svg")
     ? "en"
     : "el";
+
+  function changeLanguage(lang) {
+    document.body.classList.remove("english", "greek");
+    document.body.classList.add(lang === "en" ? "english" : "greek");
+  }
 
   function updateDropdown() {
     options.forEach((option) => {
@@ -21,6 +26,7 @@ if (selector) {
     });
   }
 
+  changeLanguage(selectedLang);
   updateDropdown();
 
   current.addEventListener("click", (e) => {
@@ -39,6 +45,8 @@ if (selector) {
       currentImg.src = img.src;
       currentImg.alt = img.alt;
 
+      changeLanguage(selectedLang);
+
       updateDropdown();
       selector.classList.remove("active");
     });
@@ -50,8 +58,8 @@ if (selector) {
     }
   });
 }
-// js for the menu on mobile
 
+// Mobile menu
 menuButton.addEventListener("click", () => {
   aside.classList.toggle("menu-open");
 });
